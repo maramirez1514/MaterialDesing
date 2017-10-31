@@ -7,4 +7,16 @@
         <item name="android:textColorPrimary">@color/primaryTextColor</item>
         <item name="android:textColorSecondary">@color/secondaryTextColor</item>
     </style>
+
+    <style name="TemaMaterial" parent="android:Theme.Material.Light.NoActionBar.Fullscreen">
+        <item name="android:colorPrimary">@color/primaryColor</item>
+        <item name="android:colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="android:colorAccent">@color/secondaryDarkColor</item>
+        <item name="android:colorButtonNormal">@color/primaryLightColor</item>
+        <item name="android:textColorPrimary">@color/primaryTextColor</item>
+        <item name="android:textColorSecondary">@color/secondaryTextColor</item>
+
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowBackground">@mipmap/fondo</item>
+    </style>
 </resources>

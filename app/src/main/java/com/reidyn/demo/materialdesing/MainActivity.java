@@ -10,6 +10,9 @@ public class MainActivity extends FragmentActivity {
 
     private Button btnMenu1;
     private Button btnTipografia;
+    private Button btnSombras;
+    private Button btnPropiedades;
+    private Button btnCompatibilidad;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +32,30 @@ public class MainActivity extends FragmentActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(),TipografiaActivity.class));
+            }
+        });
+
+        btnSombras = (Button)findViewById(R.id.btnSombras);
+        btnSombras.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),CapasySombras.class));
+            }
+        });
+
+        btnPropiedades = (Button)findViewById(R.id.btnPropiedades);
+        btnPropiedades.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),PropiedadesActivity.class));
+            }
+        });
+
+        btnCompatibilidad = (Button)findViewById(R.id.btnCompatibilidad);
+        btnCompatibilidad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),CompatibilidadActivity.class));
             }
         });
     }
