@@ -25,6 +25,10 @@
             android:name=".PropiedadesActivity"
             android:theme="@style/TemaMaterial" />
         <activity android:name=".CompatibilidadActivity" />
+        <activity android:name=".activityCardView" />
+        <activity android:name=".botonFlotanteActivity" />
+        <activity android:name=".ActivityRecyclerView" />
+        <activity android:name=".AnimacionesActivity" />
     </application>
 
 </manifest>

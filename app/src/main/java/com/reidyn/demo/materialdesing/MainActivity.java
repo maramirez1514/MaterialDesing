@@ -13,6 +13,10 @@ public class MainActivity extends FragmentActivity {
     private Button btnSombras;
     private Button btnPropiedades;
     private Button btnCompatibilidad;
+    private Button btnCardView;
+    private Button btnButton;
+    private Button btnRecyclerView;
+    private Button btnAnimacion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +60,38 @@ public class MainActivity extends FragmentActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),CompatibilidadActivity.class));
+            }
+        });
+
+        btnCardView = (Button)findViewById(R.id.btnCardView);
+        btnCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),activityCardView.class));
+            }
+        });
+
+        btnButton = (Button)findViewById(R.id.btnButton);
+        btnButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),botonFlotanteActivity.class));
+            }
+        });
+
+        btnRecyclerView = (Button)findViewById(R.id.btnRecyclerView);
+        btnRecyclerView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),ActivityRecyclerView.class));
+            }
+        });
+
+        btnAnimacion = (Button)findViewById(R.id.btnAnimacion);
+        btnAnimacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),AnimacionesActivity.class));
             }
         });
     }
